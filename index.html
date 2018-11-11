@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Krusada Housing Project - 2015</title>
+	<meta name="author" content="Krusada Bonaire">
+	<meta name="description" content="Krusada is a rehabilitation center in Bonaire">
+	<meta name="keywords" content="krusada,bonaire,rehabilitation">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Crete+Round:400,400italic' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="container" id="header">
+		<div id="logo">
+			<img src="images/logo.png" alt="Krusada Logo" />
+			<h1>Housing Plan 2015</h1>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#Who">Who</a></li>
+				<li><a href="#TheProblem">The Problem</a></li>
+				<li><a href="#Helping">Helping</a></li>
+				<li><a href="#You">You</a></li>
+				<li><a id="donate-link" href="#Donate">Donate</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container" id="topImage">
+		<div id="title">
+			<h1>Offering a new future for ex-addicts on Bonaire</h1>
+		</div>
+	</div>
+	<div class="container" id="body">
+		<div id="left">
+			<div class="content" id="Who">
+				<h2>Who is Krusada?</h2>
+				<p>For more than 15 years, Krusada has been focusing on people who are unable to keep up with the society of Bonaire including those that struggle with addiction, a criminal past or people with poor social skills. Krusada is a place of recovery that provides a Christian vision.</p>
+				<p>We follow the parable of the Good Samaritan who did not pass by a neighbour in need.</p>
+			</div>
+			<a id="TheProblem"></a>
+			<div class="content" id="pull-quote1">
+				<h2>What is the problem?</h2>
+				<p>Housing in Bonaire is expensive, overcrowded, and substandard. Utility prices are often exorbitant. Further, it does not meet the needs of people in crisis that we serve.</p>
+			</div>
+			<a id="Helping"></a>
+			<div class="content" id="pull-quote2">
+				<h2>How is Krusada helping?</h2>
+				<p>Krusada offers housing to people that are a threat to the wellbeing of the communities in which they reside. Through our programs, we seek to advance prosperity on Bonaire and to improve the social cohesion between our clients and the local residents.</p>
+				<p>Rebuilding a substance free, structured life is a long-term project. Living at Krusada focuses on self-support with only minimal in-house care.</p>
+			</div>
+			<div class="content" id="You">
+				<h2>How can <span id="make-red">YOU</span> help?</h2>
+				<p>Krusada wants to help the needy by building a unit of 8 apartments that share a communal space. The apartments will provide private living space for their clients and space for meetings.</p>
+				<p>Each apartment building will cost approximatetly $30,000. Donations are greatly needed to either fund the general construction of the building or individual items including furniture and appliances.</p>
+				<h3>To Donate:</h3>
+				<p>Krusada will accept monetary items to the general fund or for a <a href="items.html" title="View the specific items">specific household item</a>.</p>
+				<form action="items.html">
+					<input class="btn" type="submit" value="View the items Krusada needs">
+				</form>
+				<p>Contact Eric de Jong to discuss your donation.</p>
+				<p><a href="mailto:E.deJong@krusada.nl">E.deJong@krusada.nl</a><br/>011-599-717-2233</p>
+				<p>To make a direct deposit, please use the account number <span id="emp">109.706.07 MCB Bonaire</span></p>
+			</div>
+		</div>
+		<div id="right">
+			<div id="sidebar">
+				<h2>How to donate</h2>
+				<p>Krusada needs your help to build these new living spaces!</p>
+				<p>Contact Eric de Jong to discuss your donation. Krusada will accept monetary items to the general fund or for a <a href="items.html" title="View the specific items">specific household item</a>.</p>
+				<p><a href="mailto:E.deJong@krusada.nl">E.deJong@krusada.nl</a><br/>011-599-717-2233</p>
+				<h2>Renderings of the apartments</h2>
+				<a href="images/Front.jpg" target="_new"><img src="images/Front_thumb.jpg" alt="Front Render of Apartment" /></a>
+				<a href="images/Back.jpg" target="_new"><img src="images/Back_thumb.jpg" alt="Front Render of Apartment" /></a>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="footer">
+		<p>Foundation Krusada <br/>
+			Kaminda Lagun 191 <br/> 
+			Kralendijk <br/> 
+			info@krusada.nl<br/>
+			011-599-717-2233
+		</p>
+	</div>
+	<div id="donate-modal">
+		<div id="close-box">
+			<a href="#" id="close-link" alt="Close"><img src="images/close.png" alt="Close this box" /></a>
+		</div>
+		<div id="valign">
+			<p>Contact Eric de Jong to discuss your donation.</p>
+			<p>Krusada will accept monetary items to the general fund or for a <a href="items.html" title="View the specific items">specific household item</a>.</p>
+			<p>To make a direct deposit, please use the account number<br/> <span id="emp">109.706.07 MCB Bonaire</span></p>
+			<p><a href="mailto:E.deJong@krusada.nl">E.deJong@krusada.nl</a><br/>011-599-717-2233</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $("#donate-link").click(function() {
+		    	$("#donate-modal").toggleClass("open");
+		    });
+
+		    $("#close-link").click(function(){
+		    	$("#donate-modal").toggleClass("open");
+		    });
+		});
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+</body>
+</html>
